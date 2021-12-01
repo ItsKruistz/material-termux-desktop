@@ -1,5 +1,5 @@
 # MaterialTernuxDesktop
-Setup a beautiful Material Design inspired desktop in Termux.
+Setup a beautiful Material Design inspired desktop in Termux (Yes, it's in Termux's shell, not in proot-distro)
 
 **Comming soon**
 
