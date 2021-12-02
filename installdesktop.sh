@@ -3,11 +3,11 @@
 GREEN="\e[32m"
 ENDCOLOR="\e[0m"
 
-cd $HOME && clear && read -p "Are you sure? [y/n] " -n 1 -r
+cd $HOME && clear && read -p "Do you want to install the desktop"? [y/n] " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    echo "doing stuff"
+    echo "You choose to install the desktop"
 echo -e "${GREEN}
 (•) Installing the desktop...
 ${ENDCOLOR}"
@@ -21,7 +21,7 @@ cd $HOME
 
 elif [[ $REPLY =~ ^[Nn]$ ]]
 then
-    echo "ok then"
+    echo "Action refused by user"
 else
-    echo "bro it aint valid"
+    echo "Invalid answer!"
 fi
