@@ -8,7 +8,7 @@ Setup a beautiful Material Design inspired desktop in Termux (Yes, it's in Termu
 
 First, copy this code:
 ```
-termux-setup-storage && apt update && apt upgrade -y && apt install wget && termux-wake-lock && wget
+termux-setup-storage && apt update && apt upgrade -y && apt install wget git && termux-wake-lock && git clone 
 ```
 It will clone the repository and install the desktop. Follow the instructions then just wait until the installation is finished.
 
