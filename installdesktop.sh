@@ -7,7 +7,8 @@ cd $HOME && clear && read -p "Do you want to install the desktop? [y/n] " -n 1 -
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    echo "You choose to install the desktop"
+    echo "
+You choose to install the desktop"
 echo -e "${GREEN}
 (•) Installing the desktop...
 ${ENDCOLOR}"
@@ -21,7 +22,9 @@ cd $HOME
 
 elif [[ $REPLY =~ ^[Nn]$ ]]
 then
-    echo "Action cancelled by user"
+    echo "
+Action cancelled by user"
 else
-    echo "Invaild response!"
+    echo "
+Invaild response!"
 fi
