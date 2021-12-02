@@ -2,7 +2,7 @@
 
 Setup a beautiful Material Design inspired desktop in Termux (Yes, it's in Termux's shell, not in proot-distro)
 
-**WARNING: THIS PROJECT IS A WORK IN PROGRESS!**
+**WARNING: THIS PROJECT IS A WORK IN PROGRESS AND NOW SUITABLE WITH PEOPLE WHO HATE BLOATS!**
 
 **If anyone is interested to help this project, just clone this project and do a pull request for reviewing**
 
