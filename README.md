@@ -17,3 +17,4 @@ It will clone the repository and install the desktop. Follow the instructions th
 (It's in development so you can see I'm adding and editing some files, this is my first time of me do something like this, so you can add a issue or do a pull request if you feel this still doesn't feel right.)
 
 **Status: Now it can start a plain Xfce desktop. Now writing scripts to add Material Design like config automatically to the desktop.**
+Credits: Materia theme by nana_4
