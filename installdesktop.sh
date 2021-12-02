@@ -5,10 +5,12 @@ ENDCOLOR="\e[0m"
 
 cd $HOME && clear && read -p "Do you want to install the desktop (y/n)?" choice
 case "$choice" in 
-  y|Y ) echo "You choose to install the desktop
-";;
-  n|N ) echo "Action refused by user";;
-  * ) echo "Invalid answer";;
+  y|Y ) echo "
+You choose to install the desktop";;
+  n|N ) echo "
+Action refused by user";;
+  * ) echo "
+Invalid answer";;
 esac
 echo -e "${GREEN}
 (•) Installing the desktop...
