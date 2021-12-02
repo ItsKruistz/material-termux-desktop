@@ -1,1 +1,1 @@
-vncserver -geometry 1280x720 -xstartup $PREFIX/bin/xfce4-session -listen tcp :1
+vncserver -geometry 1280x720 -xstartup $PREFIX/bin/lxqt-session -listen tcp :1
