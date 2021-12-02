@@ -21,7 +21,7 @@ cd $HOME
 
 elif [[ $REPLY =~ ^[Nn]$ ]]
 then
-    echo "Action refused by user"
+    echo "Action cancelled by user"
 else
     echo "Invaild response!"
 fi
