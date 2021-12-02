@@ -11,6 +11,7 @@ then
 echo -e "${GREEN}
 (•) Installing the desktop...
 ${ENDCOLOR}"
+
 apt install unstable-repo x11-repo
 apt update && apt upgrade -y
 apt install termux-api lxqt python obconf tigervnc gl4es papirus-icon-theme mpc mpd texlive-roboto unzip zip bsdtar otter-browser xarchiver neofetch sl audacious -y
