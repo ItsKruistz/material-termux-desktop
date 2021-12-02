@@ -1,4 +1,4 @@
-# MaterialTermuxDesktop
+# material-termux-desktop
 
 Setup a beautiful Material Design inspired desktop in Termux (Yes, it's in Termux's shell, not in proot-distro)
 
@@ -10,7 +10,7 @@ Setup a beautiful Material Design inspired desktop in Termux (Yes, it's in Termu
 
 First, copy this code:
 ```
-termux-setup-storage && apt update && apt upgrade -y && apt install wget git && termux-wake-lock && git clone https://github.com/NotteShock/MaterialTermuxDesktop.git && cd MaterialTermuxDesktop && bash installdesktop.sh
+termux-setup-storage && apt update && apt upgrade -y && apt install wget git && termux-wake-lock && git clone https://github.com/NotteShock/material-termux-desktop.git && cd material-termux-desktop && bash installdesktop.sh
 ```
 It will clone the repository and install the desktop. Follow the instructions then just wait until the installation is finished.
 
