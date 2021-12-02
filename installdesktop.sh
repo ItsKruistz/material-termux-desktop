@@ -1,1 +1,2 @@
-
+echo Installing MaterialTermuxDesktop...
+apt install xfce4 xfce4-goodies tigervnc xorg
