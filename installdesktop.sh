@@ -7,7 +7,7 @@ cd $HOME && clear && read -p "Do you want to install the desktop? [y/n] " -n 1 -
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    echo "doing stuff"
+    echo "You choose to install the desktop"
 echo -e "${GREEN}
 (•) Installing the desktop...
 ${ENDCOLOR}"
