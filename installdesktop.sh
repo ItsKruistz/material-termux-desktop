@@ -1,2 +1,2 @@
 echo Installing MaterialTermuxDesktop...
-apt install xfce4 xfce4-goodies tigervnc xorgproto
+apt install unstable-repo x11-repo xfce4 xfce4-goodies tigervnc xorgproto
