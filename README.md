@@ -18,4 +18,7 @@ It will clone the repository and install the desktop. Follow the instructions th
 
 **Status: Now it can start a plain Xfce desktop. Now writing scripts to add Material Design like config automatically to the desktop.**
 
-Credits: Materia theme by nana_4
+Credits: 
+
+- Materia theme by nana_4
+- Papirus icon theme
