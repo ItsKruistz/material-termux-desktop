@@ -20,5 +20,5 @@ It will clone the repository and install the desktop. Follow the instructions th
 
 Credits: 
 
-- Materia theme by nana_4
+- **[Materia theme](https://guthub.com/nana_4/materia-theme)**by nana_4
 - Papirus icon theme
