@@ -20,6 +20,12 @@ tar -xf themes.tar.gz -C $PREFIX/share/themes/
 cd
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/startdesktop.sh
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/stopdesktop.sh
+mkdir $HOME/Desktop
+mkdir $HOME/Downloads
+mkdir $HOME/Templates
+mkdir $HOME/Public
+mkdir $HOME/Documents
+mkdir $HOME/Video
 chmod +x *.sh
 cd $HOME
 
