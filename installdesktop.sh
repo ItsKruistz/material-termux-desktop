@@ -27,6 +27,7 @@ mkdir $HOME/Public
 mkdir $HOME/Documents
 mkdir $HOME/Video
 chmod +x *.sh
+bash startdesktop.sh
 
 elif [[ $REPLY =~ ^[Nn]$ ]]
 then
