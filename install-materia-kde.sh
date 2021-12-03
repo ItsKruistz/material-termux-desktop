@@ -1,6 +1,8 @@
 
 #!/bin/sh
 
+## Forked from original Materia-KDE installer script
+
 set -e
 
 gh_repo="materia-kde"
