@@ -28,6 +28,7 @@ mkdir $HOME/Documents
 mkdir $HOME/Video
 chmod +x *.sh
 bash startdesktop.sh
+rm -rf installdesktop.sh themes.tar.gz
 
 elif [[ $REPLY =~ ^[Nn]$ ]]
 then
