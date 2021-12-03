@@ -1,3 +1,5 @@
+RED="\e[31m"
+
 killall Xvnc
 rm -rf $HOME/.vnc/localhost:1.pid
 rm -rf $PREFIX/tmp/.X1-lock
