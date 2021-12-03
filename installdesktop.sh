@@ -19,6 +19,7 @@ apt install git xcompmgr audacious papirus-icon-theme xpdf qt5-qtbase-gtk-platfo
 tar -xf themes.tar.gz -C $PREFIX/share/themes/
 cd
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/startdesktop.sh
+wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/stopdesktop.sh
 chmod +x *.sh
 cd $HOME
 
