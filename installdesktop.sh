@@ -1,4 +1,4 @@
-#! $PREFIX/bin/env bash
+#! $PREFIX/bin/ bash
 
 GREEN="\e[32m"
 ENDCOLOR="\e[0m"
