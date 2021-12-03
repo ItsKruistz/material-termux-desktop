@@ -16,6 +16,7 @@ echo -e "${GREEN}
 ${ENDCOLOR}"
 apt install unstable-repo x11-repo
 apt install git xcompmgr audacious papirus-icon-theme xpdf qt5-qtbase-gtk-platformtheme qt5-qttools qt5-qtx11extras lxqt lxqt-build-tools otter-browser qgit featherpad gtk2 gtk3 python-tkinter tigervnc xorg-xhost openbox geany qt5-qtwebsockets qt5-qtxmlpatterns qt5-qtdeclarative termux-api geany-plugins xorg-xprop neofetch sl texlive-roboto galculator qt5-qttools glade feathernotes xorg-xprop mtpaint xorg-xhost -y
+wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/themes.tar.gz
 tar -xf themes.tar.gz -C $PREFIX/share/themes/
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/startdesktop.sh
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/stopdesktop.sh
