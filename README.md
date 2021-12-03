@@ -22,3 +22,4 @@ Credits:
 
 - **[Materia theme](https://github.com/nana-4/materia-theme)** by nana-4
 - **[Papirus icon theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)** by PapirusDevelopmentTeam
+- LXQt
