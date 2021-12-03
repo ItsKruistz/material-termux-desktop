@@ -1,1 +1,5 @@
-vncserver -geometry 1280x720 -xstartup $PREFIX/bin/startlxqt -listen tcp :1
+#!/bin/bash
+
+vncserver -listen tcp 
+vncserver -list
+termux-open vnc://127.0.0.1:5901
