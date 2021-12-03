@@ -15,7 +15,7 @@ echo -e "${GREEN}
 (•) Installing the desktop...
 ${ENDCOLOR}"
 apt install unstable-repo x11-repo
-apt install git xcompmgr audacious papirus-icon-theme xpdf xfce4-panel qt5-qtbase-gtk-platformtheme qt5-qttools qt5-qtx11extras lxqt lxqt-build-tools otter-browser qgit featherpad gtk2 gtk3 python-tkinter tigervnc xorg-xhost openbox geany qt5-qtwebsockets qt5-qtxmlpatterns qt5-qtdeclarative termux-api geany-plugins xorg-xprop neofetch sl texlive-roboto galculator qt5-qttools glade feathernotes xorg-xprop mtpaint xorg-xhost -y
+apt install git xcompmgr picom audacious papirus-icon-theme xpdf xfce4-panel qt5-qtbase-gtk-platformtheme qt5-qttools qt5-qtx11extras lxqt lxqt-build-tools otter-browser qgit featherpad gtk2 gtk3 python-tkinter tigervnc xorg-xhost openbox geany qt5-qtwebsockets qt5-qtxmlpatterns qt5-qtdeclarative termux-api geany-plugins xorg-xprop neofetch sl texlive-roboto galculator qt5-qttools glade feathernotes xorg-xprop mtpaint xorg-xhost -y
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/themes.tar.gz
 tar -xf themes.tar.gz -C $PREFIX/share/themes/
 wget -qO- https://raw.githubusercontent.com/NotteShock/material-termux-desktop/master/install-materia-kde.sh | sh
@@ -29,7 +29,7 @@ mkdir $HOME/Documents
 mkdir $HOME/Video
 chmod +x *.sh
 bash startdesktop.sh
-rm -rf installdesktop.sh themes.tar.gz
+rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh
 
 elif [[ $REPLY =~ ^[Nn]$ ]]
 then
