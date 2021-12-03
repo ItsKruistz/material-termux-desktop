@@ -1,4 +1,5 @@
 RED="\e[31m"
+ENDCOLOR="\e[0m"
 
 killall Xvnc
 rm -rf $HOME/.vnc/localhost:1.pid
