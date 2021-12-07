@@ -34,6 +34,9 @@ cd $HOME
 git clone https://github.com/adi1090x/termux-style
 cd termux-style
 ./install
+termux-style
+C
+78
 chmod +x *.sh
 bash startdesktop.sh
 rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh
