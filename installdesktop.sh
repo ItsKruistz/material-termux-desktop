@@ -37,7 +37,7 @@ chmod +x user-dirs.dirs
 cd $HOME
 chmod +x *.sh
 bash startdesktop.sh
-rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh
+rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz
 
 elif [[ $REPLY =~ ^[Nn]$ ]]
 then
