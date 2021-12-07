@@ -30,7 +30,7 @@ mkdir $HOME/Public
 mkdir $HOME/Documents
 mkdir $HOME/Pictures
 mkdir $HOME/Videos
-sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+chsh -s zsh
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 echo 'source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh'>>~/.zshrc
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
