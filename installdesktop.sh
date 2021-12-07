@@ -35,6 +35,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosugges
 echo 'source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh'>>~/.zshrc
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 echo 'source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'>>~/.zshrc
+wget -L https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/user-dirs.dirs
 chmod +x $HOME/user-dirs.dirs
 mv $HOME/user-dirs.dirs $HOME/.config/user-dirs.dirs
 chmod +x *.sh
