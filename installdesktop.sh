@@ -30,6 +30,7 @@ mkdir $HOME/Public
 mkdir $HOME/Documents
 mkdir $HOME/Pictures
 mkdir $HOME/Videos
+mkdir .config
 cd ~/.config/
 wget -L https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/user-dirs.dirs
 chmod +x user-dirs.dirs
