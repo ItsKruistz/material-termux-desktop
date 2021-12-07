@@ -22,11 +22,12 @@ wget -qO- https://raw.githubusercontent.com/NotteShock/material-termux-desktop/m
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/startdesktop.sh
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/stopdesktop.sh
 mkdir $HOME/Desktop
-mkdir $HOME/Downloads
+mkdir $HOME/Downloads 
 mkdir $HOME/Templates
 mkdir $HOME/Public
 mkdir $HOME/Documents
-mkdir $HOME/Video
+mkdir $HOME/Pictures
+mkdir $HOME/Videos
 sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k 
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
