@@ -28,6 +28,8 @@ mkdir $HOME/Public
 mkdir $HOME/Documents
 mkdir $HOME/Video
 sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k 
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 chmod +x *.sh
 bash startdesktop.sh
 rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh
