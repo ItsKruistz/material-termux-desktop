@@ -15,7 +15,7 @@ echo -e "${GREEN}
 (•) Installing the desktop...
 ${ENDCOLOR}"
 apt install unstable-repo x11-repo
-apt install zsh ruby kvantum xarchiver git audacious papirus-icon-theme xpdf xfce4-whiskermenu-plugin xfce4-terminal xfce4-goodies xfce4-panel-profiles qt5-qtbase-gtk-platformtheme qt5-qtx11extras xfce4 qt5ct otter-browser qgit gtk2 gtk3 python-tkinter tigervnc xorg-xhost geany qt5-qtwebsockets qt5-qtxmlpatterns qt5-qtdeclarative termux-api geany-plugins xorg-xprop neofetch sl texlive-roboto galculator qt5-qttools feathernotes xorg-xprop xorg-xhost -y
+apt install zsh ruby kvantum xarchiver git audacious papirus-icon-theme xpdf xfce4-whiskermenu-plugin xfce4-terminal xfce4-goodies xfce4-panel-profiles qt5-qtbase-gtk-platformtheme qt5-qtx11extras xfce4 qt5ct otter-browser qgit gtk2 gtk3 python-tkinter tigervnc xorg-xhost geany qt5-qtwebsockets qt5-qtxmlpatterns qt5-qtdeclarative termux-api geany-plugins xorg-xprop neofetch sl texlive-roboto galculator feathernotes xorg-xprop xorg-xhost -y
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/themes.tar.gz
 tar -xf themes.tar.gz -C $PREFIX/share/themes/
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/termuxproperties.tar.gz
@@ -30,9 +30,10 @@ mkdir $HOME/Public
 mkdir $HOME/Documents
 mkdir $HOME/Pictures
 mkdir $HOME/Videos
+cd ~/.config/
 wget -L https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/user-dirs.dirs
-chmod +x $HOME/user-dirs.dirs
-mv $HOME/user-dirs.dirs $HOME/.config/user-dirs.dirs
+chmod +x user-dirs.dirs
+cd $HOME
 chmod +x *.sh
 bash startdesktop.sh
 rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh
