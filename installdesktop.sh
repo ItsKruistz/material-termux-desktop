@@ -34,6 +34,7 @@ tar -xf termuxproperties.tar.gz -C ~/.termux/
 wget -qO- https://raw.githubusercontent.com/NotteShock/material-termux-desktop/master/install-materia-kde.sh | sh
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/startdesktop.sh
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/stopdesktop.sh
+clear
 sleep 1
 echo -e "${BOLDGREEN}
  • Creating shared directories.
@@ -45,6 +46,7 @@ mkdir $HOME/Public
 mkdir $HOME/Documents
 mkdir $HOME/Pictures
 mkdir $HOME/Videos
+clear
 echo -e "${BOLDGREEN}
  • Downloading and installing configs.
 ${ENDCOLOR}"
@@ -65,10 +67,14 @@ wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/f
 cd $HOME
 chmod +x *.sh
 clear
+sleep 1
+echo -e "${BOLDGREEN}
+ • The installation of the desktop is done! 
+${ENDCOLOR}"
+sleep 1
 echo Made by NotteShock with help of other resources on the Internet! | lolcat
 bash startdesktop.sh
 rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz
-
 elif [[ $REPLY =~ ^[Nn]$ ]]
 then
 sleep 1
