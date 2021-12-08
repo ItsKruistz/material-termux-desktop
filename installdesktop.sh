@@ -1,6 +1,7 @@
 #! $PREFIX/bin/ bash
 
-GREEN="\e[32m"
+GREEN="32"
+BOLDGREEN="\e[1;${GREEN}m"
 ENDCOLOR="\e[0m"
 
 ## Ask the user if the user want to install the desktop or not
@@ -13,8 +14,8 @@ sleep 1
     echo "
 You choose to install the desktop"
 sleep 1
-echo -e "${GREEN}
-(•) Installing the desktop...
+echo -e "${BOLDGREEN}
+ • Installing the desktop...
 ${ENDCOLOR}"
 sleep 1
 apt install unstable-repo x11-repo
