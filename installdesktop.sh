@@ -120,4 +120,3 @@ sleep 1
 Your response is invaild! 😑
 "
 fi
-## whatsapp tv
