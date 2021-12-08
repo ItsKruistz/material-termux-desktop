@@ -24,7 +24,7 @@ gem install lolcat
 clear
 sleep 1
 echo -e "${BOLDGREEN}
- • Installing themes and icon pack.
+ • Installing themes, icon pack and cursor theme.
 ${ENDCOLOR}"
 sleep 1
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/themes.tar.gz
@@ -59,6 +59,7 @@ wget -L https://raw.githubusercontent.com/NotteShock/material-termux-desktop/mai
 chmod +x user-dirs.dirs
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/configs.tar.gz
 tar -xf configs.tar.gz -C ~/.config/
+rm -rf configs.tar.gz
 cd $HOME
 mkdir .vnc
 cd ~/.vnc/
@@ -76,7 +77,7 @@ ${ENDCOLOR}"
 sleep 1
 echo Made by NotteShock with help of other resources on the Internet! | lolcat
 bash startdesktop.sh
-rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz
+rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz oreo_black_cursors.tar.gz
 elif [[ $REPLY =~ ^[Nn]$ ]]
 then
 sleep 1
