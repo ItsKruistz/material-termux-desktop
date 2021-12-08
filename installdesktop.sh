@@ -56,11 +56,10 @@ rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh termuxproperties.t
 
 elif [[ $REPLY =~ ^[Nn]$ ]]
 then
-sleep 1
     echo "
-You don't want to install the desktop 😔"
+You don't want to install the desktop 😔
+"
 else
-sleep 1
     echo "
 Your response is invaild! 😑"
 fi
