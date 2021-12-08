@@ -67,7 +67,7 @@ cd $HOME
 mkdir .vnc
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/xstartup
 mv ~/xstartup ~/.vnc/xstartup
-chmod +x xstartup
+chmod +x ~/.vnc/xstartup
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/forest-mountains-animals-minimalism-sunrise-atmosphere.png
 mv ~/forest-mountains-animals-minimalism-sunrise-atmosphere.png ~/Pictures/forest-mountains-animals-minimalism-sunrise-atmosphere.png
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/.bashrc
