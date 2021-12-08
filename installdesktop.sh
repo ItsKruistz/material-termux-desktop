@@ -3,7 +3,7 @@
 RED="31"
 GREEN="32"
 BOLDGREEN="\e[1;${GREEN}m"
-ITALICRED="\e[3;${RED}m"
+BOLDRED="\e[1;${RED}m"
 ENDCOLOR="\e[0m"
 
 ## Ask the user if the user want to install the desktop or not
