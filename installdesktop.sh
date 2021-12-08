@@ -119,6 +119,7 @@ sleep 1
     echo "
 You don't want to install the desktop 😔
 "
+rm -rf installdesktop.sh
 else
 sleep 1
     echo "
