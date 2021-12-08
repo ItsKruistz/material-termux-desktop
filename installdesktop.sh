@@ -98,6 +98,8 @@ git clone https://github.com/robbyrussell/oh-my-zsh.git --depth 1 $HOME/.oh-my-z
 		ZSH_THEME_GIT_PROMPT_DIRTY="%{\$fg[blue]%}) %{\$fg[yellow]%}✗"
 		ZSH_THEME_GIT_PROMPT_CLEAN="%{\$fg[blue]%})"
 	_EOF_
+alias start='./startdesktop.sh'
+alias stop='./stopdesktop.sh'
 termux-reload-settings
 clear
 sleep 1
