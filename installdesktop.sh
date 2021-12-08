@@ -7,7 +7,6 @@ ENDCOLOR="\e[0m"
 ## Ask the user if the user want to install the desktop or not
 
 clear
-figlet Material Termux Desktop | lolcat
 read -p "Do you want to install the desktop? [y/n] " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
@@ -115,7 +114,7 @@ sleep 1
 		alias lc='lolcat'
 		alias xx='chmod +x'
 		alias rel='termux-reload-settings'
-rel
+re
 sleep 1
 echo -e "${BOLDGREEN}
  • The installation of the desktop is done!
