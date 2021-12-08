@@ -15,12 +15,17 @@ sleep 1
 You choose to install the desktop"
 sleep 1
 echo -e "${BOLDGREEN}
- • Installing the desktop...
+ • Installing essential softwares and dependencies.
 ${ENDCOLOR}"
 sleep 1
 apt install unstable-repo x11-repo
 apt install figlet hexchat zsh recordmydesktop ruby kvantum xarchiver git audacious papirus-icon-theme xpdf xfce4-whiskermenu-plugin xfce4-terminal xfce4-goodies xfce4-panel-profiles qt5-qtbase-gtk-platformtheme qt5-qtx11extras xfce4 qt5ct otter-browser qgit gtk2 gtk3 python-tkinter tigervnc xorg-xhost geany qt5-qtwebsockets qt5-qtxmlpatterns qt5-qtdeclarative termux-api geany-plugins xorg-xprop neofetch sl texlive-roboto galculator feathernotes xorg-xprop xorg-xhost -y
 gem install lolcat
+sleep 1
+echo -e "${BOLDGREEN}
+ • Installing themes and icon pack.
+${ENDCOLOR}"
+sleep 1
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/themes.tar.gz
 tar -xf themes.tar.gz -C $PREFIX/share/themes/
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/termuxproperties.tar.gz
@@ -28,7 +33,10 @@ tar -xf termuxproperties.tar.gz -C ~/.termux/
 wget -qO- https://raw.githubusercontent.com/NotteShock/material-termux-desktop/master/install-materia-kde.sh | sh
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/startdesktop.sh
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/stopdesktop.sh
-wget https://raw.githubusercontent.com/thanksandnubbo/material-termux-desktop/main/.pam_environment
+sleep 1
+echo -e "${BOLDGREEN}
+ • Creating shared directories.
+${ENDCOLOR}"
 mkdir $HOME/Desktop
 mkdir $HOME/Downloads 
 mkdir $HOME/Templates
@@ -36,6 +44,10 @@ mkdir $HOME/Public
 mkdir $HOME/Documents
 mkdir $HOME/Pictures
 mkdir $HOME/Videos
+echo -e "${BOLDGREEN}
+ • Downloading and installing configs.
+${ENDCOLOR}"
+wget https://raw.githubusercontent.com/thanksandnubbo/material-termux-desktop/main/.pam_environment
 mkdir .config
 cd ~/.config/
 wget -L https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/user-dirs.dirs
