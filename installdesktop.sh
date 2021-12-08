@@ -112,6 +112,7 @@ echo -e "${BOLDRED}
 ${ENDCOLOR}"
 sleep 1
 bash startdesktop.sh
+zsh
 rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz oreo_black_cursors.tar.gz
 elif [[ $REPLY =~ ^[Nn]$ ]]
 then
@@ -119,7 +120,6 @@ sleep 1
     echo "
 You don't want to install the desktop 😔
 "
-rm -rf installdesktop.sh
 else
 sleep 1
     echo "
