@@ -39,6 +39,7 @@ cd $HOME
 mkdir .vnc
 cd ~/.vnc/
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/xstartup
+cd $HOME
 chmod +x *.sh
 bash startdesktop.sh
 rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz
