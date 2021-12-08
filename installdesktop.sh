@@ -23,6 +23,7 @@ tar -xf termuxproperties.tar.gz -C ~/.termux/
 wget -qO- https://raw.githubusercontent.com/NotteShock/material-termux-desktop/master/install-materia-kde.sh | sh
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/startdesktop.sh
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/stopdesktop.sh
+wget https://raw.githubusercontent.com/thanksandnubbo/material-termux-desktop/main/.pam_environment
 mkdir $HOME/Desktop
 mkdir $HOME/Downloads 
 mkdir $HOME/Templates
