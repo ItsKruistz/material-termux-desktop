@@ -29,6 +29,8 @@ ${ENDCOLOR}"
 sleep 1
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/themes.tar.gz
 tar -xf themes.tar.gz -C $PREFIX/share/themes/
+wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/oreo_black_cursors.tar.gz
+tar -xf themes.tar.gz -C $PREFIX/share/icons/
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/termuxproperties.tar.gz
 tar -xf termuxproperties.tar.gz -C ~/.termux/
 wget -qO- https://raw.githubusercontent.com/NotteShock/material-termux-desktop/master/install-materia-kde.sh | sh
