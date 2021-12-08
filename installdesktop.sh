@@ -38,7 +38,7 @@ chmod +x user-dirs.dirs
 cd $HOME
 mkdir .vnc
 cd ~/.vnc/
-
+wget https://raw.githubusercontent.com/thanksandnubbo/material-termux-desktop/main/xstartup
 chmod +x *.sh
 bash startdesktop.sh
 rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz
