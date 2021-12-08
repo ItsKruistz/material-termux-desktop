@@ -36,6 +36,9 @@ cd ~/.config/
 wget -L https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/user-dirs.dirs
 chmod +x user-dirs.dirs
 cd $HOME
+mkdir .vnc
+cd ~/.vnc/
+
 chmod +x *.sh
 bash startdesktop.sh
 rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz
