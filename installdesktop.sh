@@ -113,6 +113,7 @@ ${ENDCOLOR}"
 sleep 1
 bash startdesktop.sh
 zsh
+## Remove installation files.
 rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz oreo_black_cursors.tar.gz
 elif [[ $REPLY =~ ^[Nn]$ ]]
 then
