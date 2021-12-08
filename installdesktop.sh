@@ -74,49 +74,6 @@ termux-reload-settings
 clear
 sleep 1
 echo -e "${BOLDGREEN}
- • Installing ZSH and ZSH theme.
-${ENDCOLOR}"
-sleep 1
-	echo -e ${CYAN}"\n[*] Installing Oh-my-zsh... \n"
-	git clone https://github.com/robbyrussell/oh-my-zsh.git --depth 1 $HOME/.oh-my-zsh; }
-	cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
-	sed -i -e 's/ZSH_THEME=.*/ZSH_THEME="aditya"/g' $HOME/.zshrc
-	sed -i -e 's|# export PATH=.*|export PATH=$HOME/.local/bin:$PATH|g' $HOME/.zshrc
-	# ZSH theme
-	cat > $HOME/.oh-my-zsh/custom/themes/aditya.zsh-theme <<- _EOF_
-		# Default OMZ theme
-		if [[ "\$USER" == "root" ]]; then
-		  PROMPT="%(?:%{\$fg_bold[red]%}%{\$fg_bold[yellow]%}%{\$fg_bold[red]%} :%{\$fg_bold[red]%} )"
-		  PROMPT+='%{\$fg[cyan]%}  %c%{\$reset_color%} \$(git_prompt_info)'
-		else
-		  PROMPT="%(?:%{\$fg_bold[red]%}%{\$fg_bold[green]%}%{\$fg_bold[yellow]%} :%{\$fg_bold[red]%} )"
-		  PROMPT+='%{\$fg[cyan]%}  %c%{\$reset_color%} \$(git_prompt_info)'
-		fi
-		ZSH_THEME_GIT_PROMPT_PREFIX="%{\$fg_bold[blue]%}  git:(%{\$fg[red]%}"
-		ZSH_THEME_GIT_PROMPT_SUFFIX="%{\$reset_color%} "
-		ZSH_THEME_GIT_PROMPT_DIRTY="%{\$fg[blue]%}) %{\$fg[yellow]%}✗"
-		ZSH_THEME_GIT_PROMPT_CLEAN="%{\$fg[blue]%})"
-	_EOF_
-	# Append some aliases
-	cat >> $HOME/.zshrc <<- _EOF_
-		#------------------------------------------
-		alias l='ls -lh'
-		alias ll='ls -lah'
-		alias la='ls -a'
-		alias ld='ls -lhd'
-		alias p='pwd'
-		#alias rm='rm -rf'
-		alias u='cd $PREFIX'
-		alias h='cd $HOME'
-		alias :q='exit'
-		alias grep='grep --color=auto'
-		alias open='termux-open'
-		alias lc='lolcat'
-		alias xx='chmod +x'
-		alias rel='termux-reload-settings'
-rel
-sleep 1
-echo -e "${BOLDGREEN}
  • The installation of the desktop is done!
 ${ENDCOLOR}"
 sleep 1
