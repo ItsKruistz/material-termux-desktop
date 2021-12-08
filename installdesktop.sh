@@ -44,7 +44,8 @@ cd $HOME
 mkdir .vnc
 cd ~/.vnc/
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/xstartup
-cd Pictures
+chmod +x xstartup
+cd ~/Pictures/
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/forest-mountains-animals-minimalism-sunrise-atmosphere.png
 cd $HOME
 chmod +x *.sh
