@@ -42,6 +42,8 @@ cd $HOME
 mkdir .vnc
 cd ~/.vnc/
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/xstartup
+cd Pictures
+wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/xstartup
 cd $HOME
 chmod +x *.sh
 bash startdesktop.sh
