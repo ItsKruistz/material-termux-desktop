@@ -6,5 +6,5 @@ rm -rf $HOME/.vnc/localhost:1.pid
 rm -rf $PREFIX/tmp/.X1-lock
 rm -rf $PREFIX/tmp/.X11-unix/X1
 echo -e "${RED}
-Desktop has been stopped successfully!
+All desktop process has been stopped successfully!
 ${ENDCOLOR}"
