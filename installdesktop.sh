@@ -106,6 +106,11 @@ echo -e "${BOLDGREEN}
 ${ENDCOLOR}"
 sleep 1
 echo Made by NotteShock with help of other resources on the Internet! | lolcat
+sleep 1
+echo -e "${BOLDRED}
+ • To start the desktop please type "start", to stop please type "stop" (optional because the start script will calls this script automatically when you use the start script)
+${ENDCOLOR}"
+sleep 1
 bash startdesktop.sh
 rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz oreo_black_cursors.tar.gz
 elif [[ $REPLY =~ ^[Nn]$ ]]
