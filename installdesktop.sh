@@ -6,7 +6,13 @@ ENDCOLOR="\e[0m"
 
 ## Ask the user if the user want to install the desktop or not
 
-clear && read -p "Do you want to install the desktop? [y/n] " -n 1 -r
+clear
+figlet 
+Material
+Termux
+Desktop
+ | lolcat
+read -p "Do you want to install the desktop? [y/n] " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
