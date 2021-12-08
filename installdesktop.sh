@@ -63,8 +63,8 @@ tar -xf configs.tar.gz -C ~/.config/
 rm -rf configs.tar.gz
 cd $HOME
 mkdir .vnc
-cd ~/.vnc/
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/xstartup
+mvdir ~/xstartup ~/.vnc/xstartup
 chmod +x xstartup
 cd ~/Pictures/
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/forest-mountains-animals-minimalism-sunrise-atmosphere.png
