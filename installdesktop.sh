@@ -50,6 +50,7 @@ cd ~/Pictures/
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/forest-mountains-animals-minimalism-sunrise-atmosphere.png
 cd $HOME
 chmod +x *.sh
+clear
 echo Made by NotteShock with help of other resources on the Internet! | lolcat
 bash startdesktop.sh
 rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz
