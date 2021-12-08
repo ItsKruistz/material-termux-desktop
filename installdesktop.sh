@@ -9,11 +9,14 @@ clear && read -p "Do you want to install the desktop? [y/n] " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
+sleep 2
     echo "
 You choose to install the desktop"
+sleep 2
 echo -e "${GREEN}
 (•) Installing the desktop...
 ${ENDCOLOR}"
+sleep 2
 apt install unstable-repo x11-repo
 apt install hexchat zsh recordmydesktop ruby kvantum xarchiver git audacious papirus-icon-theme xpdf xfce4-whiskermenu-plugin xfce4-terminal xfce4-goodies xfce4-panel-profiles qt5-qtbase-gtk-platformtheme qt5-qtx11extras xfce4 qt5ct otter-browser qgit gtk2 gtk3 python-tkinter tigervnc xorg-xhost geany qt5-qtwebsockets qt5-qtxmlpatterns qt5-qtdeclarative termux-api geany-plugins xorg-xprop neofetch sl texlive-roboto galculator feathernotes xorg-xprop xorg-xhost -y
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/themes.tar.gz
