@@ -64,11 +64,10 @@ rm -rf configs.tar.gz
 cd $HOME
 mkdir .vnc
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/xstartup
-mvdir ~/xstartup ~/.vnc/xstartup
+mv ~/xstartup ~/.vnc/xstartup
 chmod +x xstartup
-cd ~/Pictures/
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/forest-mountains-animals-minimalism-sunrise-atmosphere.png
-cd $HOME
+mv ~/forest-mountains-animals-minimalism-sunrise-atmosphere.png ~/Pictures/forest-mountains-animals-minimalism-sunrise-atmosphere.png
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/.bashrc
 chmod +x *.sh
 clear
