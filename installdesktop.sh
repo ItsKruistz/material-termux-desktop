@@ -1,4 +1,4 @@
-#! $PREFIX/bin/ bash
+#!/bin/bash
 
 RED="31"
 GREEN="32"
