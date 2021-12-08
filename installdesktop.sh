@@ -71,8 +71,13 @@ cd ~/Pictures/
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/forest-mountains-animals-minimalism-sunrise-atmosphere.png
 cd $HOME
 chmod +x *.sh
+termux-reload-settings
 clear
-# installing omz
+sleep 1
+echo -e "${BOLDGREEN}
+ • Installing ZSH and ZSH theme.
+${ENDCOLOR}"
+sleep 1
 	echo -e ${CYAN}"\n[*] Installing Oh-my-zsh... \n"
 	git clone https://github.com/robbyrussell/oh-my-zsh.git --depth 1 $HOME/.oh-my-zsh; }
 	cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
@@ -110,6 +115,7 @@ clear
 		alias lc='lolcat'
 		alias xx='chmod +x'
 		alias rel='termux-reload-settings'
+rel
 sleep 1
 echo -e "${BOLDGREEN}
  • The installation of the desktop is done!
