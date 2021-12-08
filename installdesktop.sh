@@ -69,7 +69,8 @@ chmod +x *.sh
 clear
 sleep 1
 echo -e "${BOLDGREEN}
- • The installation of the desktop is done! 
+ • The installation of the desktop is done!
+
 ${ENDCOLOR}"
 sleep 1
 echo Made by NotteShock with help of other resources on the Internet! | lolcat
