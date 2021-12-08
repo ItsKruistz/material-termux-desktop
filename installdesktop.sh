@@ -70,6 +70,31 @@ cd ~/Pictures/
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/forest-mountains-animals-minimalism-sunrise-atmosphere.png
 cd $HOME
 chmod +x *.sh
+clear
+sleep 1
+echo -e "${BOLDGREEN}
+ • Installing zsh and zsh theme.
+${ENDCOLOR}"
+sleep 1
+git clone https://github.com/robbyrussell/oh-my-zsh.git --depth 1 $HOME/.oh-my-zsh; }
+	cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
+	sed -i -e 's/ZSH_THEME=.*/ZSH_THEME="aditya"/g' $HOME/.zshrc
+	sed -i -e 's|# export PATH=.*|export PATH=$HOME/.local/bin:$PATH|g' $HOME/.zshrc
+	# ZSH theme
+	cat > $HOME/.oh-my-zsh/custom/themes/aditya.zsh-theme <<- _EOF_
+		# Default OMZ theme
+		if [[ "\$USER" == "root" ]]; then
+		  PROMPT="%(?:%{\$fg_bold[red]%}%{\$fg_bold[yellow]%}%{\$fg_bold[red]%} :%{\$fg_bold[red]%} )"
+		  PROMPT+='%{\$fg[cyan]%}  %c%{\$reset_color%} \$(git_prompt_info)'
+		else
+		  PROMPT="%(?:%{\$fg_bold[red]%}%{\$fg_bold[green]%}%{\$fg_bold[yellow]%} :%{\$fg_bold[red]%} )"
+		  PROMPT+='%{\$fg[cyan]%}  %c%{\$reset_color%} \$(git_prompt_info)'
+		fi
+		ZSH_THEME_GIT_PROMPT_PREFIX="%{\$fg_bold[blue]%}  git:(%{\$fg[red]%}"
+		ZSH_THEME_GIT_PROMPT_SUFFIX="%{\$reset_color%} "
+		ZSH_THEME_GIT_PROMPT_DIRTY="%{\$fg[blue]%}) %{\$fg[yellow]%}✗"
+		ZSH_THEME_GIT_PROMPT_CLEAN="%{\$fg[blue]%})"
+	_EOF_
 termux-reload-settings
 clear
 sleep 1
