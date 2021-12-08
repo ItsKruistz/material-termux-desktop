@@ -69,6 +69,7 @@ chmod +x xstartup
 cd ~/Pictures/
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/forest-mountains-animals-minimalism-sunrise-atmosphere.png
 cd $HOME
+wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/.bashrc
 chmod +x *.sh
 clear
 sleep 1
