@@ -38,6 +38,8 @@ mkdir .config
 cd ~/.config/
 wget -L https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/user-dirs.dirs
 chmod +x user-dirs.dirs
+wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/xfce4config.tar.gz
+tar -xf xfce4config.tar.gz -C ~/.config/
 cd $HOME
 mkdir .vnc
 cd ~/.vnc/
