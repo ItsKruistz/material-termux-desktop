@@ -114,7 +114,7 @@ sleep 1
 		alias lc='lolcat'
 		alias xx='chmod +x'
 		alias rel='termux-reload-settings'
-re
+rel
 sleep 1
 echo -e "${BOLDGREEN}
  • The installation of the desktop is done!
