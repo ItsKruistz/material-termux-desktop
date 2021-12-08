@@ -70,6 +70,8 @@ wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/f
 mv ~/forest-mountains-animals-minimalism-sunrise-atmosphere.png ~/Pictures/forest-mountains-animals-minimalism-sunrise-atmosphere.png
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/.bashrc
 chmod +x *.sh
+alias start='./startdesktop.sh'
+alias stop='./stopdesktop.sh'
 clear
 sleep 1
 echo -e "${BOLDGREEN}
