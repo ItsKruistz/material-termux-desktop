@@ -37,8 +37,8 @@ tar -xf oreo_black_cursors.tar.gz -C $PREFIX/share/icons/
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/termuxproperties.tar.gz
 tar -xf termuxproperties.tar.gz -C ~/.termux/
 wget -qO- https://raw.githubusercontent.com/NotteShock/material-termux-desktop/master/install-materia-kde.sh | sh
-wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/startdesktop.sh
-wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/stopdesktop.sh
+wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/start
+wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/stop
 clear
 sleep 1
 echo -e "${BOLDGREEN}
@@ -110,11 +110,10 @@ sleep 1
 echo -e "${BOLDRED}
  • To start the desktop please type "start", to stop please type "stop" (optional because the start script will calls this script automatically when you use the start script)
 ${ENDCOLOR}"
-sleep 1
-bash startdesktop.sh
+sleep start
 zsh
 ## Remove installation files.
-rm -rf installdesktop.sh themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz oreo_black_cursors.tar.gz
+rm -rf install themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz oreo_black_cursors.tar.gz
 elif [[ $REPLY =~ ^[Nn]$ ]]
 then
 sleep 1
