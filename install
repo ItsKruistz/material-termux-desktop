@@ -114,7 +114,8 @@ sleep 1
 echo -e "${BOLDRED}
  • To start the desktop please type "start", to stop please type "stop" (optional because the start script will calls this script automatically when you use the start script)
 ${ENDCOLOR}"
-sleep start
+sleep 1
+start
 zsh
 ## Remove installation files.
 rm -rf install themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz oreo_black_cursors.tar.gz
