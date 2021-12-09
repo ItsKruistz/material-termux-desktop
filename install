@@ -27,7 +27,7 @@ gem install lolcat
 clear
 sleep 1
 echo -e "${BOLDGREEN}
- • Installing themes, icon pack and cursor theme.
+ • Installing themes, icon pack, cursor theme and font.
 ${ENDCOLOR}"
 sleep 1
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/themes.tar.gz
@@ -39,6 +39,8 @@ tar -xf termuxproperties.tar.gz -C ~/.termux/
 wget -qO- https://raw.githubusercontent.com/NotteShock/material-termux-desktop/master/install-materia-kde.sh | sh
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/start
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/stop
+wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/Inconsolata-Go.ttf
+mv ~/xstartup ~/.vnc/xstartup
 clear
 sleep 1
 echo -e "${BOLDGREEN}
