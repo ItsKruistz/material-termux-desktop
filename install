@@ -103,8 +103,10 @@ mv ~/start $PREFIX/local/bin/start
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/start
 ln -s ~/start $PREFIX/local/bin/start
 chmod +x ~/start
-ln -s ~/start $PREFIX/local/bin/stop
-chmod +x stop
+mv ~/stop $PREFIX/local/bin/stop
+wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/stop
+ln -s ~/stop $PREFIX/local/bin/stop
+chmod +x ~/stop
 clear
 sleep 1
 echo -e "${BOLDGREEN}
