@@ -97,6 +97,10 @@ git clone https://github.com/robbyrussell/oh-my-zsh.git --depth 1 $HOME/.oh-my-z
 		ZSH_THEME_GIT_PROMPT_CLEAN="%{\$fg[blue]%})"
 	_EOF_
 termux-reload-settings
+ln -s ~/start $PREFIX/local/bin/start
+chmod +x start
+ln -s ~/start $PREFIX/local/bin/stop
+chmod +x stop
 clear
 sleep 1
 echo -e "${BOLDGREEN}
