@@ -99,8 +99,10 @@ git clone https://github.com/robbyrussell/oh-my-zsh.git --depth 1 $HOME/.oh-my-z
 		ZSH_THEME_GIT_PROMPT_CLEAN="%{\$fg[blue]%})"
 	_EOF_
 termux-reload-settings
+mv ~/start $PREFIX/local/bin/start
+wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/start
 ln -s ~/start $PREFIX/local/bin/start
-chmod +x start
+chmod +x ~/start
 ln -s ~/start $PREFIX/local/bin/stop
 chmod +x stop
 clear
