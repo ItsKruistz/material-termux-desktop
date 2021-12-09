@@ -1,5 +1,9 @@
 #!/bin/bash
 
-./stop
+killall Xvnc
+rm -rf $HOME/.vnc/localhost:1.pid
+rm -rf $PREFIX/tmp/.X1-lock
+rm -rf $PREFIX/tmp/.X11-unix/X1
+
 vncserver -geometry 1280x720 -xstartup ~/.vnc/xstartup -listen tcp :1
 vncserver -list
