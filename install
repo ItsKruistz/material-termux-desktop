@@ -40,7 +40,7 @@ wget -qO- https://raw.githubusercontent.com/NotteShock/material-termux-desktop/m
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/start
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/stop
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/Inconsolata-Go.ttf
-mv ~/xstartup ~/.vnc/xstartup
+mv ~/Inconsolata-Go.ttf $PREFIX/share/fonts/Inconsolata-Go.ttf
 clear
 sleep 1
 echo -e "${BOLDGREEN}
