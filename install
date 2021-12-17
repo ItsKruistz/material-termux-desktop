@@ -32,6 +32,9 @@ ${ENDCOLOR}"
 sleep 1
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/themes.tar.gz
 tar -xf themes.tar.gz -C $PREFIX/share/themes/
+git clone https://github.com/vinceliuice/Orchis-kde.git
+bash Orchis-kde/install.sh
+rm -rf Orchis-kde
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/iconsandcursors.tar.gz
 tar -xf iconsandcursors.tar.gz -C $PREFIX/share/icons/
 gtk-update-icon-cache $PREFIX/share/icons/Tela-circle/
