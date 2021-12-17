@@ -72,6 +72,8 @@ mv ~/xstartup ~/.vnc/xstartup
 chmod +x ~/.vnc/xstartup
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/forest-mountains-animals-minimalism-sunrise-atmosphere.png
 mv ~/forest-mountains-animals-minimalism-sunrise-atmosphere.png ~/Pictures/forest-mountains-animals-minimalism-sunrise-atmosphere.png
+wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/orchis-theme-wallpaper.jpg
+mv ~/orchis-theme-wallpaper.jpg ~/Pictures/orchis-theme-wallpaper.jpg
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/.bashrc
 chmod +x *
 clear
