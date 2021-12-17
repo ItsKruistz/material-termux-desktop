@@ -55,6 +55,7 @@ mkdir $HOME/Public
 mkdir $HOME/Documents
 mkdir $HOME/Pictures
 mkdir $HOME/Videos
+ln -s $HOME/storage/music Music
 clear
 echo -e "${BOLDGREEN}
  • Downloading and installing configs.
