@@ -127,12 +127,12 @@ echo Made by NotteShock with help of other resources on the Internet! | lolcat
 sleep 1
 echo -e "${BOLDRED}
  • To start the desktop please type "start", to stop please type "stop" (optional because the start script will calls this script automatically when you use the start script)
-${ENDCOLOR}"
+${ENDCOLOR}"cd
 sleep 1
 start
 zsh
 ## Remove installation files.
-rm -rf install themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz oreo_black_cursors.tar.gz
+rm -rf install themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz iconsandcursors.tar.gz
 elif [[ $REPLY =~ ^[Nn]$ ]]
 then
 sleep 1
