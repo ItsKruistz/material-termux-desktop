@@ -14,6 +14,8 @@ termux-setup-storage && apt update && apt upgrade -y && apt install wget && term
 ```
 It will clone the repository and install the desktop. Follow the instructions then just wait until the installation is finished.
 
+VNC Password: `termux`
+
 (It's in development so you can see I'm adding and editing some files, this is my first time of me do something like this, so you can add a issue or do a pull request if you feel this still doesn't feel right.)
 
 **Status: THE CONFIG IS WORKING! The development of this will be halted for now.**
