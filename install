@@ -23,7 +23,7 @@ echo -e "${BOLDGREEN}
 ${ENDCOLOR}"
 sleep 1
 apt install unstable-repo x11-repo
-apt install --no-install-recommends thunar xfdesktop4 xfwm4 xfce4-session xfce4-panel xfce4-whiskermenu-plugin papirus-icon-theme git qt5ct kvantum otter-browser tigervnc -y
+apt install --no-install-recommends thunar xfdesktop4 xfwm4 xfce4-session xfce4-panel xfce4-whiskermenu-plugin papirus-icon-theme git qt5ct kvantum otter-browser geany tigervnc -y
 clear
 sleep 1
 echo -e "${BOLDGREEN}
