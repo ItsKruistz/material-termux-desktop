@@ -109,7 +109,7 @@ sleep 1
 start
 zsh
 ## Remove installation files.
-rm -rf install themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz iconsandcursors.tar.gz
+rm -rf ./install themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz iconsandcursors.tar.gz
 elif [[ $REPLY =~ ^[Nn]$ ]]
 then
 sleep 1
