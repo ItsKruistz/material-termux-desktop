@@ -23,7 +23,7 @@ echo -e "${BOLDGREEN}
 ${ENDCOLOR}"
 sleep 1
 apt install unstable-repo x11-repo
-apt install --no-install-recommends gtk2-engines-murrine man vim-gtk zsh ruby kvantum xarchiver git audacious papirus-icon-theme xpdf xfce4-whiskermenu-plugin xfce4-terminal xfce4-goodies xfce4-panel-profiles qt5-qtbase-gtk-platformtheme qt5-qtx11extras xfce4 qt5ct otter-browser qgit gtk2 gtk3 python-tkinter tigervnc xorg-xhost geany termux-api geany-plugins xorg-xprop neofetch sl texlive-roboto galculator feathernotes xorg-xprop xorg-xhost -y
+apt install --no-install-recommends gtk2-engines-murrine ruby kvantum xarchiver git audacious papirus-icon-theme xpdf xfce4-whiskermenu-plugin xfce4-terminal xfce4-goodies xfce4-panel-profiles qt5-qtbase-gtk-platformtheme qt5-qtx11extras xfce4 qt5ct otter-browser gtk2 gtk3 python-tkinter tigervnc xorg-xhost geany termux-api geany-plugins xorg-xprop neofetch sl texlive-roboto galculator feathernotes xorg-xprop xorg-xhost -y
 gem install lolcat
 clear
 sleep 1
@@ -86,30 +86,6 @@ wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/o
 mv ~/orchis-theme-wallpaper.jpg ~/Pictures/orchis-theme-wallpaper.jpg
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/.bashrc
 chmod +x *
-clear
-sleep 1
-echo -e "${BOLDGREEN}
- • Installing zsh and zsh theme.
-${ENDCOLOR}"
-sleep 1
-git clone https://github.com/robbyrussell/oh-my-zsh.git --depth 1 $HOME/.oh-my-zsh
-	cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
-	sed -i -e 's/ZSH_THEME=.*/ZSH_THEME="aditya"/g' $HOME/.zshrc
-	sed -i -e 's|# export PATH=.*|export PATH=$HOME/.local/bin:$PATH|g' $HOME/.zshrc
-	# ZSH theme
-	cat > $HOME/.oh-my-zsh/custom/themes/aditya.zsh-theme <<- _EOF_
-		if [[ "\$USER" == "root" ]]; then
-		  PROMPT="%(?:%{\$fg_bold[red]%}%{\$fg_bold[yellow]%}%{\$fg_bold[red]%} :%{\$fg_bold[red]%} )"
-		  PROMPT+='%{\$fg[cyan]%}  %c%{\$reset_color%} \$(git_prompt_info)'
-		else
-		  PROMPT="%(?:%{\$fg_bold[red]%}%{\$fg_bold[green]%}%{\$fg_bold[yellow]%} :%{\$fg_bold[red]%} )"
-		  PROMPT+='%{\$fg[cyan]%}  %c%{\$reset_color%} \$(git_prompt_info)'
-		fi
-		ZSH_THEME_GIT_PROMPT_PREFIX="%{\$fg_bold[blue]%}  git:(%{\$fg[red]%}"
-		ZSH_THEME_GIT_PROMPT_SUFFIX="%{\$reset_color%} "
-		ZSH_THEME_GIT_PROMPT_DIRTY="%{\$fg[blue]%}) %{\$fg[yellow]%}✗"
-		ZSH_THEME_GIT_PROMPT_CLEAN="%{\$fg[blue]%})"
-	_EOF_
 termux-reload-settings
 mv ~/start $PREFIX/bin/start
 wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/start
