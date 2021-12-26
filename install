@@ -23,7 +23,7 @@ echo -e "${BOLDGREEN}
 ${ENDCOLOR}"
 sleep 1
 apt install unstable-repo x11-repo
-apt install --no-install-recommends thunar xfdesktop4 xfwm4 xfce4-session xfce4-panel xfce4-whiskermenu-plugin papirus-icon-theme git qt5ct kvantum otter-browser geany tigervnc -y
+apt install --no-install-recommends thunar xfdesktop4 xfwm4 xfce4-session xfce4-panel papirus-icon-theme git qt5ct kvantum otter-browser tigervnc -y
 clear
 sleep 1
 echo -e "${BOLDGREEN}
@@ -100,7 +100,7 @@ echo -e "${BOLDGREEN}
  • The installation of the desktop is done!
 ${ENDCOLOR}"
 sleep 1
-echo Made by NotteShock with help of other resources on the Internet!
+echo Made by NotteShock with help of other resources on the Internet! | lolcat
 sleep 1
 echo -e "${BOLDRED}
  • To start the desktop please type "start", to stop please type "stop" (optional because the start script will stop all desktop sessions by itself)
@@ -109,7 +109,7 @@ sleep 1
 start
 zsh
 ## Remove installation files.
-rm -rf ./install themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz iconsandcursors.tar.gz
+rm -rf install themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz iconsandcursors.tar.gz
 elif [[ $REPLY =~ ^[Nn]$ ]]
 then
 sleep 1
