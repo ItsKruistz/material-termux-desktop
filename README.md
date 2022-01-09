@@ -26,3 +26,4 @@ Credits:
 - **[Papirus icon theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)** by PapirusDevelopmentTeam
 - **[Xfce](https://xfce.org)**
 - **[Yisus7u7](https://github.com/Yisus7u7)** because i have used some code from him, Thank you!
+- **[Orchis gtk theme](https://github.com/vinceliuice/Orchis-theme) and **[Orchis kde](https://github.com/vinceliuice/Orchis-kde)
