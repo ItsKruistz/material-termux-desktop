@@ -108,7 +108,6 @@ echo -e "${BOLDRED}
 ${ENDCOLOR}"
 sleep 1
 start
-zsh
 ## Remove installation files.
 rm -rf ./install themes.tar.gz install-materia-kde.sh termuxproperties.tar.gz iconsandcursors.tar.gz
 elif [[ $REPLY =~ ^[Nn]$ ]]
