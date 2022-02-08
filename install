@@ -23,7 +23,7 @@ echo -e "${BOLDGREEN}
 ${ENDCOLOR}"
 sleep 1
 apt install unstable-repo x11-repo
-apt install --no-install-recommends gtk2-engines-murrine ruby kvantum xarchiver git audacious papirus-icon-theme xpdf xfce4-whiskermenu-plugin xfce4-terminal xfce4-goodies xfce4-panel-profiles xfce4 qt5ct otter-browser gtk2 gtk3 python-tkinter tigervnc xorg-xhost geany termux-api geany-plugins xorg-xprop neofetch sl texlive-roboto galculator feathernotes xorg-xprop xorg-xhost -y
+apt install --no-install-recommends gtk2-engines-murrine ruby kvantum xarchiver git audacious papirus-icon-theme xpdf xfce4-whiskermenu-plugin xfce4-terminal xfce4-goodies xfce4-panel-profiles xfce4 qt5ct otter-browser gtk2 gtk3 tigervnc xorg-xhost geany termux-api geany-plugins xorg-xprop neofetch sl texlive-roboto galculator feathernotes xorg-xprop xorg-xhost -y
 gem install lolcat
 clear
 sleep 1
