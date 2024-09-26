@@ -100,7 +100,7 @@ echo -e "${BOLDGREEN}
  • The installation of the desktop is done!
 ${ENDCOLOR}"
 sleep 1
-echo Made by Kruistz (NotteShock) with help of other resources on the Internet! | lolcat
+echo Made by Kruistz/NotteShock with help of other resources on the Internet! | lolcat
 sleep 1
 echo -e "${BOLDRED}
  • To start the desktop please type "start", to stop please type "stop" (optional because the start script will stop all desktop sessions by itself)
