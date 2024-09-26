@@ -30,22 +30,22 @@ echo -e "${BOLDGREEN}
  • Installing themes, icon pack, cursor theme and font.
 ${ENDCOLOR}"
 sleep 1
-wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/themes.tar.gz
+wget https://raw.githubusercontent.com/ItsKruistz/material-termux-desktop/main/themes.tar.gz
 tar -xf themes.tar.gz -C $PREFIX/share/themes/
 git clone https://github.com/vinceliuice/Orchis-kde.git
 bash Orchis-kde/install.sh
 rm -rf Orchis-kde
 mkdir $PREFIX/share/icons
-wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/iconsandcursors.tar.gz
+wget https://raw.githubusercontent.com/ItsKruistz/material-termux-desktop/main/iconsandcursors.tar.gz
 tar -xf iconsandcursors.tar.gz -C $PREFIX/share/icons/
 gtk-update-icon-cache $PREFIX/share/icons/Tela-circle/
 gtk-update-icon-cache $PREFIX/share/icons/Tela-circle-dark/
-wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/termuxproperties.tar.gz
+wget https://raw.githubusercontent.com/ItsKruistz/material-termux-desktop/main/termuxproperties.tar.gz
 tar -xf termuxproperties.tar.gz -C ~/.termux/
-wget -qO- https://raw.githubusercontent.com/NotteShock/material-termux-desktop/master/install-materia-kde.sh | sh
-wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/start
-wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/stop
-wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/Inconsolata-Go.ttf
+wget -qO- https://raw.githubusercontent.com/ItsKruistz/material-termux-desktop/master/install-materia-kde.sh | sh
+wget https://raw.githubusercontent.com/ItsKruistz/material-termux-desktop/main/start
+wget https://raw.githubusercontent.com/ItsKruistz/material-termux-desktop/main/stop
+wget https://raw.githubusercontent.com/ItsKruistz/material-termux-desktop/main/Inconsolata-Go.ttf
 mv ~/Inconsolata-Go.ttf $PREFIX/share/fonts/Inconsolata-Go.ttf
 clear
 sleep 1
@@ -64,34 +64,34 @@ clear
 echo -e "${BOLDGREEN}
  • Downloading and installing configs.
 ${ENDCOLOR}"
-wget https://raw.githubusercontent.com/thanksandnubbo/material-termux-desktop/main/.pam_environment
+wget https://raw.githubusercontent.com/ItsKruistz/material-termux-desktop/main/.pam_environment
 mkdir .config
 cd ~/.config/
-wget -L https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/user-dirs.dirs
+wget -L https://raw.githubusercontent.com/ItsKruistz/material-termux-desktop/main/user-dirs.dirs
 chmod +x user-dirs.dirs
-wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/configs.tar.gz
+wget https://raw.githubusercontent.com/ItsKruistz/material-termux-desktop/main/configs.tar.gz
 tar -xf configs.tar.gz -C ~/.config/
 rm -rf configs.tar.gz
 cd $HOME
 mkdir .vnc
-wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/xstartup
+wget https://raw.githubusercontent.com/ItsKruistz/material-termux-desktop/main/xstartup
 mv ~/xstartup ~/.vnc/xstartup
 chmod +x ~/.vnc/xstartup
-wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/passwd
+wget https://raw.githubusercontent.com/ItsKruistz/material-termux-desktop/main/passwd
 mv ~/passwd ~/.vnc/passwd
-wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/forest-mountains-animals-minimalism-sunrise-atmosphere.png
+wget https://raw.githubusercontent.com/ItsKruistz/material-termux-desktop/main/forest-mountains-animals-minimalism-sunrise-atmosphere.png
 mv ~/forest-mountains-animals-minimalism-sunrise-atmosphere.png ~/Pictures/forest-mountains-animals-minimalism-sunrise-atmosphere.png
-wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/orchis-theme-wallpaper.jpg
+wget https://raw.githubusercontent.com/ItsKruistz/material-termux-desktop/main/orchis-theme-wallpaper.jpg
 mv ~/orchis-theme-wallpaper.jpg ~/Pictures/orchis-theme-wallpaper.jpg
-wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/.bashrc
+wget https://raw.githubusercontent.com/ItsKruistz/material-termux-desktop/main/.bashrc
 chmod +x *
 termux-reload-settings
 mv ~/start $PREFIX/bin/start
-wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/start
+wget https://raw.githubusercontent.com/ItsKruistz/material-termux-desktop/main/start
 ln -s ~/start $PREFIX/bin/start
 chmod +x ~/start
 mv ~/stop $PREFIX/bin/stop
-wget https://raw.githubusercontent.com/NotteShock/material-termux-desktop/main/stop
+wget https://raw.githubusercontent.com/ItsKruistz/material-termux-desktop/main/stop
 ln -s ~/stop $PREFIX/bin/stop
 chmod +x ~/stop
 clear
@@ -100,7 +100,7 @@ echo -e "${BOLDGREEN}
  • The installation of the desktop is done!
 ${ENDCOLOR}"
 sleep 1
-echo Made by NotteShock with help of other resources on the Internet! | lolcat
+echo Made by Kruistz (NotteShock) with help of other resources on the Internet! | lolcat
 sleep 1
 echo -e "${BOLDRED}
  • To start the desktop please type "start", to stop please type "stop" (optional because the start script will stop all desktop sessions by itself)
